@@ -35,7 +35,7 @@
     <h3>ng-change callback:</h3>
 
     <ul>
-      <li ng-repeat="color in appCtrl.colorHistory track by $index" ng-bind="color" ng-style="{ color: color }"></li>
+      <li ng-repeat="color in appCtrl.colorHistory  | reverse track by $index" ng-bind="color" ng-style="{ color: color }"></li>
     </ul>
 
   </div>

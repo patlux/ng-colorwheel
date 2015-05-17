@@ -13,7 +13,7 @@ appController = function() {
 
   init = function() {
 
-    vm.color = "#808080";
+    vm.color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     vm.colorChanged = colorChanged;
 
     vm.colorHistory = []
@@ -25,6 +25,10 @@ appController = function() {
   colorChanged = function() {
     console.log("color changed:", vm.color );
     vm.colorHistory.push( vm.color );
+
+    if (vm.colorHistory.length > 50) {
+      vm.colorHistory.shift()
+    }
   }
 
 
@@ -36,7 +40,14 @@ appController = function() {
 
 
 
+// REVERSE LIST FILTER
 
+reverseFilter = function() {
+  return function(items) {
+    console.log(items);
+    return items.slice().reverse()
+  }
+}
 
 // -------------------------------------------------------------------------- \\
 // ANGULAR MODULE
@@ -44,3 +55,4 @@ appController = function() {
 angular
   .module( 'ngColorwheelExample', [ 'directive.ngColorwheel' ] )
   .controller('AppController', appController)
+  .filter('reverse', reverseFilter);
