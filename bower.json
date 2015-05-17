@@ -20,7 +20,8 @@
     "src"
   ],
   "dependencies": {
-    "colorwheel": "~1.0.0",
+    "raphael": "2.1.2",
+    "colorwheel": "master",
     "angular": "~1.3.15"
   }
 }
