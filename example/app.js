@@ -44,7 +44,6 @@ appController = function() {
 
 reverseFilter = function() {
   return function(items) {
-    console.log(items);
     return items.slice().reverse()
   }
 }
