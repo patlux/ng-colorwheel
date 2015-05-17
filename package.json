@@ -1,6 +1,6 @@
 {
   "name": "ng-colorwheel",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "AngularJS directive implementation of the jquery-raphael colorwheel",
   "main": "dist/ng-colorwheel.js",
   "scripts": {
