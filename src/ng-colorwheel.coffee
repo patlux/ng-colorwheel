@@ -44,7 +44,7 @@
 
       updateModel = ( color ) ->
         # user selected a new color, update angular model value
-        ngModelCtrl.$setViewValue( color )
+        ngModelCtrl.$setViewValue( color.hex )
 
 
       # ---------------------------------------------------------------------- #

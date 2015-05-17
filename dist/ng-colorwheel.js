@@ -34,7 +34,7 @@
         return modelValue;
       };
       updateModel = function(color) {
-        return ngModelCtrl.$setViewValue(color);
+        return ngModelCtrl.$setViewValue(color.hex);
       };
       init();
     };
