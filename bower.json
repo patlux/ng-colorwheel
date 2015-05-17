@@ -1,0 +1,25 @@
+{
+  "name": "ng-colorwheel",
+  "version": "0.1.0",
+  "authors": [
+    "Patrick Wozniak <hello@patwoz.de>"
+  ],
+  "description": "AngularJS directive implementation of the jquery-raphael colorwheel",
+  "main": "dist/ng-colorhweel.js",
+  "keywords": [
+    "angular",
+    "color",
+    "wheel"
+  ],
+  "license": "MIT",
+  "homepage": "http://patwoz.de/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
+  "dependencies": {
+    "colorwheel": "~1.0.0"
+  }
+}
