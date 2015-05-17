@@ -24,19 +24,16 @@
       cw = null;
       init = function() {
         cw = Raphael.colorwheel(elem[0], options.size, options.segments);
-        cw.color('#ff0000');
         ngModelCtrl.$formatters.push(toView);
         return cw.onchange(updateModel);
       };
       toView = function(modelValue) {
-        console.log('toView: ', modelValue);
         if (modelValue != null) {
           cw.color(modelValue);
         }
         return modelValue;
       };
       updateModel = function(color) {
-        console.log('updateModel: ', color);
         return ngModelCtrl.$setViewValue(color);
       };
       init();

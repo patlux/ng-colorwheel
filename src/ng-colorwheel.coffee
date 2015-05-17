@@ -29,7 +29,6 @@
 
       init = () ->
         cw = Raphael.colorwheel( elem[0], options.size, options.segments )
-        cw.color('#ff0000')
 
         ngModelCtrl.$formatters.push( toView )
 
@@ -40,12 +39,11 @@
 
       toView = ( modelValue ) ->
         # update jquery-colorwheel
-        console.log 'toView: ', modelValue
         cw.color( modelValue ) if modelValue?
         modelValue
 
       updateModel = ( color ) ->
-        console.log 'updateModel: ', color
+        # user selected a new color, update angular model value
         ngModelCtrl.$setViewValue( color )
 
 
