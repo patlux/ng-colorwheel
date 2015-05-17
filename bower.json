@@ -5,7 +5,7 @@
     "Patrick Wozniak <hello@patwoz.de>"
   ],
   "description": "AngularJS directive implementation of the jquery-raphael colorwheel",
-  "main": "dist/ng-colorhweel.js",
+  "main": "./dist/ng-colorhweel.js",
   "keywords": [
     "angular",
     "color",
