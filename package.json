@@ -1,0 +1,19 @@
+{
+  "name": "ng-colorwheel",
+  "version": "0.1.0",
+  "description": "AngularJS directive implementation of the jquery-raphael colorwheel",
+  "main": "dist/ng-colorwheel.js",
+  "scripts": {
+    "coffee": "coffee -o dist/ -bcw src/"
+  },
+  "keywords": [
+    "angular",
+    "color",
+    "wheel"
+  ],
+  "author": "Patrick Wozniak <hello@patwoz.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.9.2"
+  }
+}
