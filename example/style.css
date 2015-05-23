@@ -1,0 +1,45 @@
+body {
+  margin: 15px;
+
+  font-family: Verdana, sans-serif;
+}
+
+.wrapper {
+
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+
+  background-color: #fff;
+  box-shadow: 0 0 8px #000;
+  border-radius: 3px;
+
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    width: auto;
+    margin: 15px;
+  }
+}
+
+.colorwheel {
+  margin: 0 auto;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}

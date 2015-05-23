@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="ngColorwheelExample">
+<head>
+  <title>ng-colorwheel Example</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript" src="lib/angular/angular.js" ></script>
+  <script type="text/javascript" src="lib/jquery/dist/jquery.min.js" ></script>
+  <script type="text/javascript" src="lib/raphael/raphael-min.js" ></script>
+  <script type="text/javascript" src="lib/colorwheel/colorwheel.js" ></script>
+
+  <script type="text/javascript" src="../dist/ng-colorwheel.js" ></script>
+  <script type="text/javascript" src="app.js" ></script>
+
+</head>
+<body ng-controller="AppController as appCtrl" ng-style="{ 'background-color': appCtrl.color }">
+
+  <div class="wrapper text-center">
+
+    <h1>ng-colorwheel</h1>
+
+    <div class="colorwheel" ng-colorwheel="{ size: 150, segments: 120 }" ng-model="appCtrl.color" ng-change="appCtrl.colorChanged()"></div>
+
+    <p>Current:</p>
+    <h3 ng-bind="appCtrl.color"></h3>
+
+    <p>
+      <span>Change Color:</span>
+      <input type="text" ng-model="appCtrl.color" />
+    </p>
+
+    <hr />
+
+    <h3>ng-change callback:</h3>
+
+    <ul>
+      <li ng-repeat="color in appCtrl.colorHistory  | reverse track by $index" ng-bind="color" ng-style="{ color: color }"></li>
+    </ul>
+
+  </div>
+
+
+
+</body>
+</html>
