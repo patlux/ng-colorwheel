@@ -1,4 +1,5 @@
 # ng-colorwheel
+[![Build Status](https://travis-ci.org/patlux/ng-colorwheel.svg)](https://travis-ci.org/patlux/ng-colorwheel)
 
 AngularJS directive implementation of the jquery-raphael [colorwheel](https://github.com/jweir/colorwheel).
 
