@@ -16,5 +16,5 @@ Demo: http://patlux.github.io/ng-colorwheel/example/index.html
 ## Installation
 ##### via [bower](http://bower.io/):
 ```
-$ bower install angular-bootstrap
+$ bower install ng-colorwheel
 ```
