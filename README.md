@@ -10,6 +10,10 @@ Demo: http://patlux.github.io/ng-colorwheel/example/index.html
 ## Usage example
 
 ```
+angular.module( 'your-angular-app', [ 'directive.ngColorwheel' ] )
+```
+
+```
 <div ng-colorwheel="{ size: 150, segments: 120 }" ng-model="color"></div>
 ```
 
